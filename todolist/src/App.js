@@ -27,7 +27,6 @@ class App extends React.Component {
   doneTodo = (index) => {
     const { todoList } = this.state;
     todoList[index].isDone = true;
-    console.error({ todoList });
     this.setState({ todoList });
   };
   deleteTodo = (index) => {
